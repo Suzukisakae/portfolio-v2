@@ -13,8 +13,16 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/core-downloads-tracker": "^6.1.10",
+    "@mui/icons-material": "^6.2.0",
+    "@mui/material": "^6.2.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^7.0.2",
+    "react-sticky-el": "^2.1.1",
+    "styled-components": "^6.1.13",
+    "three": "^0.171.0",
+    "three-gltf-loader": "^1.111.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",

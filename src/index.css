@@ -1,68 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* CNPM moi */
+  --primary-color: #212121;
+  --secondary-color: #808080;
+  --bold-color: #000;
+  --hover-color-1: #3a3a3a;
+  --hover-color-2: #f5f5f5;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  /* Does NOT work on Safari */
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  /* background-color: #f9f9f9; */
+  background-color: #d0ebff;
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+
+a {
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+}
+#container3D {
+  position: relative;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+canvas {
+  width: 100%; /* Chiều rộng full */
+  height: auto; /* Đảm bảo tỉ lệ mô hình */
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+span {
+  font-family: 'Inter', sans-serif;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.8rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 3.4rem;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    padding: 0 1rem;
   }
 }
