@@ -84,6 +84,25 @@ const Nav = styled.nav`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    .menu {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 10px;
+      width: 100%;  
+
+      a {
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+      }
+    }
+  }
 `
 
 export default Navbar
