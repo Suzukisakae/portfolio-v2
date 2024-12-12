@@ -22,7 +22,9 @@ function ProjectItem() {
             <div className="project-item__info">
               <h3>{item.TenProject}</h3>
               <p>{item.MoTa}</p>
-              <p>Công nghệ: {item.CongNghe}</p>
+              <div className="divider">
+                <p>Công nghệ: {item.CongNghe}</p>
+              </div>
             </div>
           </a>
         ))}
@@ -41,7 +43,7 @@ const ProjectItemWrapper = styled.section`
 
   .list-project {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 40px;
   }
 
@@ -70,20 +72,27 @@ const ProjectItemWrapper = styled.section`
     overflow: hidden; /* Đảm bảo ảnh không bị tràn */
     img {
       width: 100%;
-      height: 200px;
+      height: 300px;
       object-fit: cover;
       transition: transform 0.3s ease; /* Thêm hiệu ứng zoom */
     }
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
   }
 
   .project-item__info {
     padding: 10px;
     h3 {
       margin-bottom: 5px;
-      color: #333;
     }
     p {
       margin: 0;
+    }
+
+    .divider {
+      margin-top: 10px;
+      border-top: 1px solid #e0e0e0;
+      padding-top: 10px;
     }
   }
 
