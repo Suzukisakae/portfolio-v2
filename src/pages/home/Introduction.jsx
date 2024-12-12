@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import profileImage from '../../assets/logo.png'
 import ThreeDScene from './Three'
+import KeyBoard from './KeyBoard'
 
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
@@ -12,7 +13,8 @@ function Introduction() {
     <>
       <IntroductionWrapper className="container">
         <div className="modal">
-          <ThreeDScene />
+          {/* <ThreeDScene /> */}
+          <KeyBoard />
         </div>
 
         <div className="title">
@@ -140,7 +142,7 @@ const IntroductionWrapper = styled.section`
 
   .modal {
     position: relative;
-    width: 400px; /* Đặt chiều rộng tùy ý */
+    width: 100%;
     height: 400px; /* Đặt chiều cao tùy ý */
     margin: 0 auto; /* Căn giữa theo chiều ngang */
     display: flex;
@@ -149,9 +151,15 @@ const IntroductionWrapper = styled.section`
     background-color: rgba(0, 0, 0, 0.1); /* Màu nền mờ (nếu cần) */
     border-radius: 10px; /* Làm tròn góc (nếu cần) */
     overflow: hidden; /* Đảm bảo canvas không vượt ra ngoài div */
+
+    @media (max-width: 768px) {
+      width: 90%;
+      height: 300px;
+    }
   }
 
   .title {
+    width: 100%;
     border-radius: 8px;
     padding: 16px;
     text-align: center;
@@ -299,6 +307,7 @@ const IntroductionWrapper = styled.section`
       }
     }
   }
+
 `
 
 export default Introduction
