@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/home/Home'
 import Project from './pages/project/Project'
-import About from './pages/about/About'
+import About from './pages/certificate/Certificate'
 
 import styled from 'styled-components'
 import Sticky from 'react-sticky-el'
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<Project />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/certificate" element={<About />} />
       </Routes>
     </>
   )

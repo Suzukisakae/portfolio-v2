@@ -12,7 +12,7 @@ function KeyBoard() {
       <ambientLight />
       <OrbitControls />
       <Suspense fallback={null}>
-        <Keyboard scale={20} rotation={[Math.PI / 2, 0, 0]} />
+        <Keyboard scale={15} rotation={[Math.PI / 2, 0, 0]} />
       </Suspense>
     </Canvas>
   )

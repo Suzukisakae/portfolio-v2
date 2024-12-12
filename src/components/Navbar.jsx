@@ -9,14 +9,14 @@ function Navbar() {
         <span>Lê Thành Vinh</span>
       </a>
       <div className="nav-links">
-        <a href="/" className="link">
+        {/* <a href="/" className="link">
           Trang chủ
-        </a>
+        </a> */}
         <a href="/project" className="link">
           Dự án
         </a>
-        <a href="/about" className="link">
-          Giới thiệu
+        <a href="/certificate" className="link">
+          Chứng chỉ
         </a>
       </div>
     </Nav>

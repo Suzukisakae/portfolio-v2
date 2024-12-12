@@ -1,3 +1,5 @@
+import anhAndroid from '../assets/android.png'
+
 const ProjectData = [
   {
     MaProject: 1,
@@ -12,8 +14,7 @@ const ProjectData = [
     MaProject: 2,
     TenProject: 'Xây dựng ứng dụng quản lý thói quen trên nền tảng di động',
     MoTa: 'Mục tiêu của đề tài là tạo ra một ứng dụng giúp người dùng xây dựng và duy trì các thói quen tích cực trong cuộc sống hàng ngày. Đây là một ứng dụng sử dụng nền tảng Android, nhằm cung cấp cho người dùng một công cụ ghi nhớ, theo dõi các thói quen của mình, ngoài ra còn nhắc nhở khi đến lịch thực hiện, thống kê và đánh giá tiến độ của người tiêu dùng',
-    HinhAnh:
-      'https://github.com/Suzukisakae/project_mobile_habit_tracked/raw/main/app/src/main/res/drawable/progress_1.png?raw=true',
+    HinhAnh: anhAndroid,
     DuongDan: 'https://github.com/Suzukisakae/project_mobile_habit_tracked',
     CongNghe: 'Android Studio, Java, Firebase'
   },

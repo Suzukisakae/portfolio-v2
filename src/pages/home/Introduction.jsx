@@ -17,13 +17,19 @@ function Introduction() {
         </div>
 
         <div className="title">
-          <p>Hello, I am an indie app developer based in Japan!</p>
+          <p>
+            Xin chào 👋🏻, mình là sinh viên năm thứ tư thuộc chuyên ngành Công
+            nghệ phần mềm
+          </p>
         </div>
 
         <div className="intro">
           <div className="intro-heading">
             <h2>Lê Thành Vinh</h2>
-            <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+            <p>
+              Skills: Frontend (ReactJS), Backend (NodeJS, Java, C#), Database
+              (MySQL, MongoDB, Firebase).
+            </p>
           </div>
           <div className="intro-img">
             <div className="img-wrapper">
@@ -32,11 +38,12 @@ function Introduction() {
           </div>
         </div>
         <div className="genneral">
-          <h2>General Information</h2>
+          <h2>Giới thiệu cá nhân</h2>
           <p>
-            I am a self-taught artist, developer, and designer. I have been
-            working in the digital industry for over 10 years. I am passionate
-            about creating beautiful and functional things.
+            Mình hiện là sinh viên năm tư của Trường Đại học Sư Phạm Kỹ thuật
+            TP.HCM. Chuyên ngành của mình là Công nghệ Phần mềm. Với niềm đam mê
+            với lập trình, mình luôn tìm kiếm những điều mới mẻ để học hỏi và
+            cài thiện kỹ năng của mình.
           </p>
         </div>
 
@@ -44,83 +51,85 @@ function Introduction() {
           <h2>Bio</h2>
           <div className="bio-section">
             <p>
-              <span className="bio-year">1984</span>
-              Born in Osaka (大阪), Japan.
+              <span className="bio-year">2003</span>
+              Năm sinh.
             </p>
           </div>
           <div className="bio-section">
             <p>
-              <span className="bio-year">2010</span>
-              Completed the Program in the Graduate School of Information
-              Science at Nara Institute of Science and Technology
-              (奈良先端科学技術大学院大学情報科学研究科修士課程)
+              <span className="bio-year">2021-2025</span>
+              Sinh viên học chuyên ngành Công nghệ phần mềm thuộc khoa CNTT tại
+              Trường Đại học Sư Phạm Kỹ thuật TP.HCM.
             </p>
           </div>
           <div className="bio-section">
             <p>
-              <span className="bio-year">2010</span>
-              Worked at Yahoo! Japan (ヤフー株式会社入社)
-            </p>
-          </div>
-          <div className="bio-section">
-            <p>
-              <span className="bio-year">2012 to present</span>
-              Working as a freelancer
+              <span className="bio-year">6/2024-9/2024</span>
+              Thực tập sinh WordPress tại Công ty Công ty TNHH Giải pháp công
+              nghệ Tech247.
             </p>
           </div>
         </div>
 
         <div className="love">
-          <h2>What I love</h2>
+          <h2>Mục tiêu nghề nghệp</h2>
           <p>
-            Coding, music, art and coffee. I love to create things that are.
-            Sometimes, I love playing chess. I also enjoy hiking, traveling, and
-            exploring new technologies. My hobbies include photography and
-            reading science fiction novels.
+            Mình mong muốn được đóng góp sức trẻ ở vị trí công việc cho doanh
+            nghiệp. Bằng việc tham gia vào môi trường công nghệ cao, mình sẽ
+            được phát triển thêm kiến thức và kỹ năng của mình từ các chuyên gia
+            trong ngành.
+          </p>
+        </div>
+
+        <div className="love">
+          <h2>Sở thích</h2>
+          <p>
+            Lập trình, âm nhạc, cờ vua và cà phê. Mình thích tạo ra những thứ
+            mới mẻ. Đôi khi, mình cũng thích chạy bộ và cầu lông.
           </p>
         </div>
 
         <div className="contact">
-          <h2>Contact</h2>
+          <h2>Liên hệ</h2>
           <ul className="social-links">
             <li>
               <a
-                href="https://github.com/craftzdog"
+                href="https://www.linkedin.com/in/l%C3%AA-th%C3%A0nh-vinh-90a15b2ab/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <GitHubIcon />
-                <span>@craftzdog</span>
+                <LinkedInIcon sx={{ fontSize: 40 }} />
+                <span>Lê Thành Vinh</span>
               </a>
             </li>
             <li>
               <a
-                href="https://twitter.com/inkdrop_app"
+                href="https://github.com/Suzukisakae"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <GoogleIcon />
-                <span>@inkdrop_app (English)</span>
+                <GitHubIcon sx={{ fontSize: 40 }} />
+                <span>Suzukisakae</span>
               </a>
             </li>
             <li>
               <a
-                href="https://twitter.com/craftzdog"
+                href="mailto:lethanhvinhspk@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <YouTubeIcon />
-                <span>@craftzdog (日本語)</span>
+                <GoogleIcon sx={{ fontSize: 40 }} />
+                <span>lethanhvinhspk@gmail.com</span>
               </a>
             </li>
             <li>
               <a
-                href="https://instagram.com/craftzdog"
+                href="https://www.youtube.com/@UkieeSakae"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <LinkedInIcon />
-                <span>@craftzdog</span>
+                <YouTubeIcon sx={{ fontSize: 40 }} />
+                <span>@UkieeSakae</span>
               </a>
             </li>
           </ul>
@@ -147,7 +156,7 @@ const IntroductionWrapper = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.1); /* Màu nền mờ (nếu cần) */
+    ${'' /* background-color: rgba(0, 0, 0, 0.1); */}
     border-radius: 10px; /* Làm tròn góc (nếu cần) */
     overflow: hidden; /* Đảm bảo canvas không vượt ra ngoài div */
 
@@ -171,6 +180,7 @@ const IntroductionWrapper = styled.section`
   }
 
   .intro {
+    width: 70%;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -285,7 +295,6 @@ const IntroductionWrapper = styled.section`
           border-radius: 8px;
           text-decoration: none;
           color: var(--primary-color);
-          font-size: 1.6rem;
           font-weight: 400;
           background-color: transparent;
           transition: background-color 0.3s, color 0.3s;
@@ -294,19 +303,10 @@ const IntroductionWrapper = styled.section`
             background-color: rgba(0, 0, 0, 0.1); /* Đổi màu nền khi hover */
             color: var(--bold-color);
           }
-
-          svg {
-            font-size: 1.6rem; /* Kích thước của icon */
-          }
-
-          span {
-            font-size: 1.6rem;
-          }
         }
       }
     }
   }
-
 `
 
 export default Introduction

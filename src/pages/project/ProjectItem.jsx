@@ -5,7 +5,7 @@ function ProjectItem() {
   return (
     <ProjectItemWrapper className="container">
       <div className="title">
-        <h2>Project</h2>
+        <h2>Một số dự án của mình</h2>
       </div>
       <div className="list-project">
         {ProjectData.map((item) => (
@@ -17,13 +17,15 @@ function ProjectItem() {
             className="project-item"
           >
             <div className="project-item__image">
-              <img src={item.HinhAnh} alt={item.TenProject} />
+              <img src={item.HinhAnh} alt={item.TenProject} loading="lazy" />
             </div>
             <div className="project-item__info">
               <h3>{item.TenProject}</h3>
               <p>{item.MoTa}</p>
               <div className="divider">
-                <p>Công nghệ: {item.CongNghe}</p>
+                <p>
+                  <strong>Công nghệ:</strong> {item.CongNghe}
+                </p>
               </div>
             </div>
           </a>
