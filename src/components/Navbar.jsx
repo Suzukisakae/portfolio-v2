@@ -18,6 +18,9 @@ function Navbar() {
         <a href="/certificate" className="link">
           Chứng chỉ
         </a>
+        <a href="/contact" className="link">
+          Liên hệ
+        </a>
       </div>
     </Nav>
   )
@@ -94,7 +97,7 @@ const Nav = styled.nav`
       flex-direction: column;
       gap: 10px;
       margin-bottom: 10px;
-      width: 100%;  
+      width: 100%;
 
       a {
         width: 100%;

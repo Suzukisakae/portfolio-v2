@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/home/Home'
 import Project from './pages/project/Project'
 import About from './pages/certificate/Certificate'
+import Contact from './pages/contact/Contact'
 
 import styled from 'styled-components'
 import Sticky from 'react-sticky-el'
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<Project />} />
         <Route path="/certificate" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   )

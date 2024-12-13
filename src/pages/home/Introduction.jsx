@@ -198,7 +198,7 @@ const IntroductionWrapper = styled.section`
     border-radius: 8px;
     padding: 16px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(231, 245, 255, 0.8);
     backdrop-filter: blur(10px);
     p {
       font-size: 1.5rem;
