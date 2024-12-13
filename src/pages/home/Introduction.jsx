@@ -18,8 +18,8 @@ function Introduction() {
 
         <div className="title">
           <p>
-            Xin chào 👋🏻, mình là sinh viên năm thứ tư thuộc chuyên ngành Công
-            nghệ phần mềm
+            Xin chào 👋🏻, mình là sinh viên năm thứ tư với chuyên ngành Công
+            nghệ phần mềm.
           </p>
         </div>
 
@@ -150,6 +150,7 @@ const IntroductionWrapper = styled.section`
 
   .modal {
     position: relative;
+    ${'' /* position: absolute; */}
     width: 100%;
     height: 400px; /* Đặt chiều cao tùy ý */
     margin: 0 auto; /* Căn giữa theo chiều ngang */

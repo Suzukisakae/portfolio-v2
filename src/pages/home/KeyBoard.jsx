@@ -1,18 +1,32 @@
-import { Canvas } from '@react-three/fiber'
+import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import Keyboard from '../../../public/Scene'
-import { ContactShadows } from '@react-three/drei'
-import { Environment } from '@react-three/drei'
-import { Suspense } from 'react'
+import { Suspense, useRef } from 'react'
+
+function RotatingKeyboard() {
+  const ref = useRef()
+
+  // Thêm logic xoay vòng thời gian thực
+  useFrame((state, delta) => {
+    if (ref.current) {
+      ref.current.rotation.y += delta * 0.01 // Xoay quanh trục Y
+    }
+  })
+
+  return (
+    <mesh ref={ref}>
+      <Keyboard  scale={15} rotation={[0, 0, 0]} />
+    </mesh>
+  )
+}
 
 function KeyBoard() {
-  console.log(Keyboard)
   return (
     <Canvas>
       <ambientLight />
       <OrbitControls />
       <Suspense fallback={null}>
-        <Keyboard scale={15} rotation={[Math.PI / 2, 0, 0]} />
+        <RotatingKeyboard />
       </Suspense>
     </Canvas>
   )
