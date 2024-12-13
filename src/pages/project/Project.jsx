@@ -7,7 +7,7 @@ function Project() {
   return (
     <>
       <Helmet>
-        <title>Dự án</title>
+        <title>Dự án của Lê Thành Vinh</title>
       </Helmet>
       <ProjectWrapper>
         <ProjectItem />

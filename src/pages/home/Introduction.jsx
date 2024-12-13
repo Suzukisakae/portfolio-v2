@@ -10,16 +10,20 @@ import GoogleIcon from '@mui/icons-material/Google'
 function Introduction() {
   return (
     <>
-      <IntroductionWrapper className="container">
+      <ThreeDScene>
         <div className="modal">
-          {/* <ThreeDScene /> */}
           <KeyBoard />
         </div>
+      </ThreeDScene>
+      <IntroductionWrapper className="container">
+        {/* <div className="modal">
+          <KeyBoard />
+        </div> */}
 
         <div className="title">
           <p>
-            Xin chào 👋🏻, mình là sinh viên năm thứ tư với chuyên ngành Công
-            nghệ phần mềm.
+            Xin chào 👋🏻, mình là sinh viên năm thứ tư với chuyên ngành Công nghệ
+            phần mềm.
           </p>
         </div>
 
@@ -27,7 +31,7 @@ function Introduction() {
           <div className="intro-heading">
             <h2>Lê Thành Vinh</h2>
             <p>
-              Skills: Frontend (ReactJS), Backend (NodeJS, Java, C#), Database
+              Kỹ năng: Frontend (ReactJS), Backend (NodeJS, Java, C#), Database
               (MySQL, MongoDB, Firebase).
             </p>
           </div>
@@ -139,6 +143,28 @@ function Introduction() {
   )
 }
 
+const ThreeDScene = styled.div`
+  width: 100%;
+  .modal {
+    position: relative;
+    ${'' /* position: absolute; */}
+    width: 100%;
+    height: 400px; /* Đặt chiều cao tùy ý */
+    margin: 0 auto; /* Căn giữa theo chiều ngang */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ${'' /* background-color: rgba(0, 0, 0, 0.1); */}
+    border-radius: 10px; /* Làm tròn góc (nếu cần) */
+    overflow: hidden; /* Đảm bảo canvas không vượt ra ngoài div */
+
+    @media (max-width: 768px) {
+      width: 90%;
+      height: 300px;
+    }
+  }
+`
+
 const IntroductionWrapper = styled.section`
   padding: 20px;
   display: flex;
@@ -222,6 +248,9 @@ const IntroductionWrapper = styled.section`
           object-fit: cover;
         }
       }
+    }
+    @media (max-width: 768px) {
+      width: 90%;
     }
   }
 

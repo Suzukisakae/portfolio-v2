@@ -9,13 +9,13 @@ function RotatingKeyboard() {
   // Thêm logic xoay vòng thời gian thực
   useFrame((state, delta) => {
     if (ref.current) {
-      ref.current.rotation.y += delta * 0.01 // Xoay quanh trục Y
+      ref.current.rotation.y += delta * 0.0 // Xoay quanh trục Y
     }
   })
 
   return (
     <mesh ref={ref}>
-      <Keyboard  scale={15} rotation={[0, 0, 0]} />
+      <Keyboard scale={15} rotation={[0, 0, 0]} />
     </mesh>
   )
 }

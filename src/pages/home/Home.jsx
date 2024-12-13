@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>Trang chủ</title>
+        <title>Lê Thành Vinh</title>
       </Helmet>
       <HomeWrapper>
         <Introduction/>
