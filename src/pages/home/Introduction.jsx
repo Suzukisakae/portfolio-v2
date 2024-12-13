@@ -22,7 +22,7 @@ function Introduction() {
 
         <div className="title">
           <p>
-            Xin chào 👋🏻, mình là sinh viên năm thứ tư với chuyên ngành Công nghệ
+            Xin chào 👋🏻, mình là sinh viên năm cuối với chuyên ngành Công nghệ
             phần mềm.
           </p>
         </div>
@@ -44,7 +44,7 @@ function Introduction() {
         <div className="genneral">
           <h2>Giới thiệu cá nhân</h2>
           <p>
-            Mình hiện là sinh viên năm tư của Trường Đại học Sư Phạm Kỹ thuật
+            Mình hiện là sinh viên năm cuối của Trường Đại học Sư Phạm Kỹ thuật
             TP.HCM. Chuyên ngành của mình là Công nghệ Phần mềm. Với niềm đam mê
             với lập trình, mình luôn tìm kiếm những điều mới mẻ để học hỏi và
             cài thiện kỹ năng của mình.
