@@ -62,11 +62,6 @@ const ContactItemWrapper = styled.section`
   .title {
     text-align: start;
     margin-bottom: 30px;
-
-    h2 {
-      font-size: 28px;
-      color: #333;
-    }
   }
 
   .contact-grid {
@@ -109,7 +104,6 @@ const ContactItemWrapper = styled.section`
     .label {
       font-size: 16px;
       font-weight: 500;
-      color: #333;
       text-align: center;
       word-wrap: break-word;
     }
@@ -121,7 +115,6 @@ const ContactItemWrapper = styled.section`
 
     p {
       font-size: 16px;
-      color: #333;
       margin-bottom: 10px;
     }
 
