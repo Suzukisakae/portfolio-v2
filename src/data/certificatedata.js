@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import UdemyLogo from '../assets/udemy.jpg'
 import AWSLogo from '../assets/newAws.png'
 

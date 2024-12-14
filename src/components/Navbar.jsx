@@ -21,6 +21,9 @@ function Navbar() {
         <a href="/contact" className="link">
           Liên hệ
         </a>
+        <a href="https://github.com/Suzukisakae/portfolio-v2" className="link">
+          Source
+        </a>
       </div>
     </Nav>
   )
