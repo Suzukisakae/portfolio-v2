@@ -37,6 +37,24 @@ const ProjectData = [
       'https://github.com/Suzukisakae/Project_Software/raw/main/Details/img/uChiTietChuyenDi.png?raw=true',
     DuongDan: 'https://github.com/Suzukisakae/Project_Software',
     CongNghe: 'C#, Winform, SQL Server'
+  },
+  {
+    MaProject: 5,
+    TenProject: 'Ứng dụng Winform Quản lí bãi đỗ xe',
+    MoTa: 'Ứng dụng được phát triển bằng ngôn ngữ C# và sử dụng SQL Server để quản lí cơ sở dữ liệu. Gồm các tác nhân chính sau. Người quản lý: Có thể quản lý chỗ đậu xe và xem các báo cáo khác nhau. Nhân viên: Có thể hỗ trợ khách hàng đỗ xe và lấy xe. Khách hàng: Có thể đỗ và lấy xe cũng như xử lý việc thanh toán phí đỗ xe.',
+    HinhAnh:
+      'https://github.com/Suzukisakae/CarParkingManagementSystem/raw/master/Resources/kDoXe.png?raw=true',
+    DuongDan: 'https://github.com/Suzukisakae/CarParkingManagementSystem',
+    CongNghe: 'C#, Winform, SQL Server'
+  },
+  {
+    MaProject: 6,
+    TenProject: 'Ứng dụng Winform Quản Lí Thư Viện Điện Tử',
+    MoTa: 'Xây dựng một hệ thống quản lý thư viện điện tử. Hệ thống sẽ quản lý 2 đối tượng chính: Người dùng và Sách',
+    HinhAnh:
+      'https://github.com/Suzukisakae/Electronic-library/raw/main/assets/gd7.png',
+    DuongDan: 'https://github.com/Suzukisakae/Electronic-library',
+    CongNghe: 'C#, Winform, SQL Server'
   }
 ]
 
