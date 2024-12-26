@@ -18,6 +18,7 @@ Chào mừng bạn đến với Portfolio V2 của Lê Thành Vinh. Đây là tr
 - Three.js
 - @react-three/fiber
 - @mui/icons-material
+- React tsparticle
 
 ## Link deploy
 

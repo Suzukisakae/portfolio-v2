@@ -77,7 +77,6 @@ canvas {
   .container {
     padding: 0 2.4rem;
   }
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -91,4 +90,3 @@ canvas {
     padding: 0 1rem;
   }
 }
-

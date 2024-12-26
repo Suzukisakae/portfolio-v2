@@ -17,14 +17,17 @@
     "@mui/material": "^6.2.0",
     "@react-three/drei": "^9.120.4",
     "@react-three/fiber": "^8.17.10",
+    "@tsparticles/react": "^3.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^7.0.2",
     "react-sticky-el": "^2.1.1",
+    "react-tsparticles": "^2.12.2",
     "styled-components": "^6.1.13",
     "three": "^0.171.0",
-    "three-gltf-loader": "^1.111.0"
+    "three-gltf-loader": "^1.111.0",
+    "tsparticles": "^3.7.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
