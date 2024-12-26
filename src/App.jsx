@@ -1,6 +1,9 @@
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+// import Video from './components/Video'
+import ParticleBackground from './components/ParticleBackground'
+
 import Home from './pages/home/Home'
 import Project from './pages/project/Project'
 import About from './pages/certificate/Certificate'
@@ -12,6 +15,7 @@ import Sticky from 'react-sticky-el'
 function App() {
   return (
     <>
+      <ParticleBackground />
       <StickyWrapper>
         <Sticky>
           <Navbar />

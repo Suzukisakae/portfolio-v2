@@ -37,6 +37,7 @@ function ProjectItem() {
 
 const ProjectItemWrapper = styled.section`
   width: 100%;
+  z-index: 1;
 
   .title {
     text-align: start;
@@ -54,8 +55,11 @@ const ProjectItemWrapper = styled.section`
     flex-direction: column;
     gap: 10px;
     text-decoration: none; /* Xóa gạch chân */
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid #1864ab;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng hover */

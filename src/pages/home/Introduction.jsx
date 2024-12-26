@@ -174,6 +174,12 @@ const IntroductionWrapper = styled.section`
   justify-content: center;
   text-align: center;
 
+  background-color: #fff;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 1px solid #1864ab;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
   .modal {
     position: relative;
     ${'' /* position: absolute; */}
@@ -198,7 +204,8 @@ const IntroductionWrapper = styled.section`
     border-radius: 8px;
     padding: 16px;
     text-align: center;
-    background-color: rgba(231, 245, 255, 0.8);
+    color: #fff;
+    background-color: rgba(8, 73, 120, 0.93);
     backdrop-filter: blur(10px);
     p {
       font-size: 1.5rem;

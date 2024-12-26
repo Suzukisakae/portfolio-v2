@@ -75,12 +75,16 @@ const ContactItemWrapper = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fff;
-    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid #1864ab;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
 
     &:hover {
       transform: translateY(-5px);
