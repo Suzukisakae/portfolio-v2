@@ -1,17 +1,19 @@
 import styled from 'styled-components'
 import Logo from '../assets/logo-vv.png'
+import { useState } from 'react'
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <Nav>
-      <a className="nav-brand" href="/">
-        <img src={Logo} alt="Personal Logo" />
-        <span>Lê Thành Vinh</span>
-      </a>
-      <div className="nav-links">
-        {/* <a href="/" className="link">
-          Trang chủ
-        </a> */}
+      <div className="nav-brand">
+        <a href="/">
+          <img src={Logo} alt="Personal Logo" />
+          <span>Lê Thành Vinh</span>
+        </a>
+      </div>
+      <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
         <a href="/project" className="link">
           Dự án
         </a>
@@ -21,56 +23,74 @@ function Navbar() {
         <a href="/contact" className="link">
           Liên hệ
         </a>
-        <a href="https://github.com/Suzukisakae/portfolio-v2" className="link">
+        <a
+          href="https://github.com/Suzukisakae/portfolio-v2"
+          className="link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Source
         </a>
+      </div>
+      <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        <span />
+        <span />
+        <span />
       </div>
     </Nav>
   )
 }
 
 const Nav = styled.nav`
+  ${'' /* position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100; */}
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  backdrop-filter: blur(10px);
-  ${'' /* background-color: rgba(255, 255, 255, 0.8); */}
-  ${'' /* background-color: #e7f5ff; */}
-  background-color: rgba(231, 245, 255, 0.8);
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
   .nav-brand {
     display: flex;
     align-items: center;
-    cursor: pointer;
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
     img {
       width: 50px;
       margin-right: 10px;
     }
 
     span {
-      font-size: 20px;
+      font-size: 22px;
       font-weight: 700;
-      color: var(--primary-color);
+      color: #ffffff;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     }
   }
 
   .nav-links {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 
     .link {
       font-size: 16px;
-      color: var(--primary-color);
+      color: #ffffff;
       font-weight: 500;
       text-decoration: none;
       position: relative;
       padding: 5px 0;
 
       &:hover {
-        color: var(--bold-color); /* Màu chữ khi hover */
+        color: #d0ebff;
       }
 
       &:hover::before {
@@ -80,33 +100,59 @@ const Nav = styled.nav`
       &::before {
         content: '';
         position: absolute;
-        bottom: -7px;
+        bottom: -5px;
         width: 100%;
         height: 2px;
-        background-color: var(--bold-color); /* Màu viền */
+        background: linear-gradient(to right, #d0ebff, #1864ab);
         transform: scaleX(0);
         transform-origin: center;
         transition: transform 0.3s ease-in-out;
       }
     }
+
+    &.open {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+
+    span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background: #ffffff;
+      margin: 4px 0;
+      transition: all 0.3s;
+    }
+
+    &:hover span {
+      background: #d0ebff;
+    }
   }
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
+    .nav-links {
+      display: none;
+    }
 
-    .menu {
-      flex-direction: column;
-      gap: 10px;
-      margin-bottom: 10px;
-      width: 100%;
+    .nav-links.open {
+      display: flex;
+    }
 
-      a {
-        width: 100%;
-        text-align: left;
-        padding: 10px 0;
-      }
+    .menu-toggle {
+      display: block;
     }
   }
 `
