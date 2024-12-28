@@ -151,6 +151,7 @@ const ThreeDScene = styled.div`
     width: 100%;
     height: 400px; /* Đặt chiều cao tùy ý */
     margin: 0 auto; /* Căn giữa theo chiều ngang */
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
