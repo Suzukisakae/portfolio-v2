@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import profileImage from '../../assets/logo.png'
+import profileImage from '../../assets/logoAccount.png'
 import KeyBoard from './KeyBoard'
 
 import GitHubIcon from '@mui/icons-material/GitHub'

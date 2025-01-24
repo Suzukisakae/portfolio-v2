@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Logo from '../assets/logo-vv.png'
+import Logo from '../assets/logoaccountvv.png'
 import { useState } from 'react'
 
 function Navbar() {
@@ -65,7 +65,7 @@ const Nav = styled.nav`
 
     img {
       width: 50px;
-      margin-right: 10px;
+      margin-right: 20px;
     }
 
     span {
